@@ -1,0 +1,11 @@
+.page-info {
+  position: absolute;
+  pointer-events: none;
+  & h1 {
+    font-weight: $page-info-text-weight;
+    font-size: $page-info-text-size;
+    line-height: $page-info-text-line-height;
+    letter-spacing: $page-info-text-letter-spacing;
+    color: rgba($color: var(--primary-rgb), $alpha: 0.1);
+  }
+}

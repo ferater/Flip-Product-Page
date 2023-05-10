@@ -8,9 +8,14 @@
   display: grid;
   grid-template-rows: $product-info-header-height 1fr $product-info-footer-height;
   position: relative;
+  & .page-info {
+    top: $product-page-info-position-top;
+    right: $product-page-info-position-right;
+    rotate: $product-page-info-rotate-angle;
+    translate: 0 -50%;
+  }
   @import "header";
   @import "content";
   @import "footer";
   @import "button";
-  @import "page-info";
 }

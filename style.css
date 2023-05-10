@@ -105,6 +105,12 @@ body {
   grid-template-rows: 2rem 1fr 3.75rem;
   position: relative;
 }
+.product-wrapper .product-info .page-info {
+  top: 50%;
+  right: -12.5rem;
+  rotate: -90deg;
+  translate: 0 -50%;
+}
 .product-wrapper .product-info .header {
   display: flex;
   justify-content: space-between;
@@ -222,21 +228,6 @@ body {
   font-size: 1rem;
   line-height: 173.5%;
 }
-.product-wrapper .product-info .page-info {
-  position: absolute;
-  top: 50%;
-  right: -12.5rem;
-  rotate: -90deg;
-  translate: 0 -50%;
-  pointer-events: none;
-}
-.product-wrapper .product-info .page-info h1 {
-  font-weight: 600;
-  font-size: 5rem;
-  line-height: 7.5rem;
-  letter-spacing: 0.1em;
-  color: rgba(var(--primary-rgb), 0.1);
-}
 .product-wrapper .tooltip {
   width: -moz-fit-content;
   width: fit-content;
@@ -266,7 +257,18 @@ body {
   border: 0.75rem solid transparent;
   border-top-color: var(--primary);
   position: absolute;
-  bottom: -1.5rem;
+  bottom: calc((1.5rem - 2px) * -1);
   left: 50%;
   translate: -50% 0;
+}
+.product-wrapper .page-info {
+  position: absolute;
+  pointer-events: none;
+}
+.product-wrapper .page-info h1 {
+  font-weight: 600;
+  font-size: 5rem;
+  line-height: 7.5rem;
+  letter-spacing: 0.1em;
+  color: rgba(var(--primary-rgb), 0.1);
 }/*# sourceMappingURL=style.css.map */

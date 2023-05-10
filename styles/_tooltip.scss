@@ -26,7 +26,7 @@
     border: $tooltip-arrow-size solid transparent;
     border-top-color: $tooltip-bg-color;
     position: absolute;
-    bottom: calc((($tooltip-arrow-size * 2) -2px) * -1);
+    bottom: calc((($tooltip-arrow-size * 2) - 2px) * -1);
     left: 50%;
     translate: -50% 0;
   }
