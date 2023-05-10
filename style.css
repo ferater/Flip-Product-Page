@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-body {
+:root {
   --body-bg-color: #c44444;
   --black-rgb: 0, 0, 0;
 }

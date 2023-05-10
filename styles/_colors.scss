@@ -7,7 +7,7 @@ $colors: (
   "body-bg-color": #c44444,
 );
 
-body {
+:root {
   --body-bg-color: #{map-get($map: $colors, $key: "body-bg-color")};
   --black-rgb: #{hexToRGB(map-get($map: $colors, $key: "black"))};
 }
