@@ -4,10 +4,16 @@
 $colors: (
   "white": #ffffff,
   "black": #000000,
-  "body-bg-color": #c44444,
+  "bg": #c44444,
 );
 
 :root {
-  --body-bg-color: #{map-get($map: $colors, $key: "body-bg-color")};
+  --bg: #{map-get($map: $colors, $key: "bg")};
+  //rgb colors
+  --white-rgb: #{hexToRGB(map-get($map: $colors, $key: "white"))};
   --black-rgb: #{hexToRGB(map-get($map: $colors, $key: "black"))};
+  --bg-rgb: #{hexToRGB(map-get($map: $colors, $key: "bg"))};
+  //dark & light colors
+  --bg-dark-10: #{darken(map-get($map: $colors, $key: "bg"), 10)};
+  --bg-light-10: #{lighten(map-get($map: $colors, $key: "bg"), 10)};
 }

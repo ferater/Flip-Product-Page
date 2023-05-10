@@ -8,8 +8,12 @@
 }
 
 :root {
-  --body-bg-color: #c44444;
+  --bg: #c44444;
+  --white-rgb: 255, 255, 255;
   --black-rgb: 0, 0, 0;
+  --bg-rgb: 196, 68, 68;
+  --bg-dark-10: #a23333;
+  --bg-light-10: #d06b6b;
 }
 
 html {
@@ -43,7 +47,7 @@ html {
 body {
   height: 100vh;
   font-family: "Poppins", sans-serif;
-  background-color: var(--body-bg-color);
+  background-color: var(--bg);
 }
 
 .container {
@@ -52,6 +56,7 @@ body {
 }
 
 .product-wrapper {
+  background-color: var(--bg-dark-10);
   width: 120rem;
   height: 67.5rem;
   grid-template-columns: 50% 50%;

@@ -35,6 +35,7 @@ body {
   height: $container-height;
 }
 .product-wrapper {
+  background-color: var(--bg-dark-10);
   width: $product-wrapper-width;
   height: $product-wrapper-height;
   grid-template-columns: 50% 50%;
