@@ -2,15 +2,17 @@
   @return red($hex), green($hex), blue($hex);
 }
 $colors: (
+  "primary": #c44444,
+  "on-primary": #ffffff,
   "white": #ffffff,
   "black": #000000,
   "gray": #ded8d8,
   "text": #414042,
-  "primary": #c44444,
 );
 
 :root {
   --primary: #{map-get($map: $colors, $key: "primary")};
+  --on-primary: #{map-get($map: $colors, $key: "on-primary")};
   --white: #{map-get($map: $colors, $key: "white")};
   --black: #{map-get($map: $colors, $key: "black")};
   --gray: #{map-get($map: $colors, $key: "gray")};

@@ -9,6 +9,7 @@
 
 :root {
   --primary: #c44444;
+  --on-primary: #ffffff;
   --white: #ffffff;
   --black: #000000;
   --gray: #ded8d8;
@@ -178,4 +179,33 @@ body {
 }
 .product-wrapper .product-info .footer .shopping-advantages .advantage:hover .icon {
   scale: 1.1;
+}
+.product-wrapper .product-info button.btn {
+  width: 18.5rem;
+  height: 3.75rem;
+  background-color: var(--primary);
+  padding: 0 2.25rem;
+  border-radius: 1.875rem;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 0.2s;
+}
+.product-wrapper .product-info button.btn:hover {
+  background-color: #a23333;
+}
+.product-wrapper .product-info button.btn:active {
+  scale: 0.99;
+}
+.product-wrapper .product-info button.btn .icon {
+  color: var(--on-primary);
+  font-size: 2.2rem;
+}
+.product-wrapper .product-info button.btn span {
+  color: var(--on-primary);
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 173.5%;
 }/*# sourceMappingURL=style.css.map */

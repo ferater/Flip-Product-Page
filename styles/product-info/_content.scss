@@ -3,8 +3,8 @@
   flex-direction: column;
   justify-content: space-around;
   & .product-title {
-    font-weight: $product-title-font-weight;
-    font-size: $product-title-font-size;
+    font-weight: $product-title-text-weight;
+    font-size: $product-title-text-size;
     line-height: $product-title-line-height;
     color: $product-title-color;
     & span {
@@ -12,8 +12,8 @@
     }
   }
   & .product-description {
-    font-weight: $product-description-font-weight;
-    font-size: $product-description-font-size;
+    font-weight: $product-description-text-weight;
+    font-size: $product-description-text-size;
     line-height: $product-description-line-height;
     color: $product-title-color;
     & span {

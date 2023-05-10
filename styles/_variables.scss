@@ -43,12 +43,12 @@ $product-title-color: rgba(
   $alpha: 0.75,
 );
 $product-title-second-color: var(--primary);
-$product-title-font-weight: 700;
-$product-title-font-size: 3.75rem;
+$product-title-text-weight: 700;
+$product-title-text-size: 3.75rem;
 $product-title-line-height: 5.6rem;
 //product description
-$product-description-font-weight: 400;
-$product-description-font-size: 1.25rem;
+$product-description-text-weight: 400;
+$product-description-text-size: 1.25rem;
 $product-description-line-height: 2.2rem;
 //*****footer
 $product-info-footer-height: 3.75rem;
@@ -58,5 +58,18 @@ $product-info-footer-advantage-height: 3.75rem;
 $product-info-footer-advantage-bg-color: rgba(var(--primary-rgb), 0.3);
 $product-info-footer-advantage-border-raduis: 50%;
 //==============================================
+
+//=====button=====
+$btn-width: 18.5rem;
+$btn-height: 3.75rem;
+$btn-bg-color: var(--primary);
+$btn-icon-size: 2.2rem;
+$btn-icon-color: var(--on-primary);
+$btn-text-weight: 600;
+$btn-text-size: 1rem;
+$btn-text-line-height: 173.5%;
+$btn-text-color: var(--on-primary);
+//===========================
 //transition
 $icon-transition-time: 0.2s;
+$transition-time: 0.2s;

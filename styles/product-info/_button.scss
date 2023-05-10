@@ -1,0 +1,29 @@
+button.btn {
+  width: $btn-width;
+  height: $btn-height;
+  background-color: $btn-bg-color;
+  padding: 0 calc($btn-height * 0.6);
+  border-radius: calc($btn-height * 0.5);
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: all $transition-time;
+  &:hover {
+    background-color: darken($color: map-get($colors, "primary"), $amount: 10);
+  }
+  &:active {
+    scale: 0.99;
+  }
+  & .icon {
+    color: $btn-icon-color;
+    font-size: $btn-icon-size;
+  }
+  & span {
+    color: $btn-text-color;
+    font-weight: $btn-text-weight;
+    font-size: $btn-text-size;
+    line-height: $btn-text-line-height;
+  }
+}
