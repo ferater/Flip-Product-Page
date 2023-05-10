@@ -1,0 +1,26 @@
+$page-flip-perspective: 5000px;
+& {
+  perspective: $page-flip-perspective;
+  & .page-wrapper {
+    position: relative;
+    & .page {
+      position: absolute;
+      inset: 0;
+      transform-origin: left center;
+      transition: all 1s;
+      transform-style: preserve-3d;
+      & .front-face,
+      & .back-face {
+        position: absolute;
+        inset: 0;
+        backface-visibility: hidden;
+      }
+      & .back-face {
+        rotate: y 180deg;
+      }
+      &.flipped {
+        rotate: y -180deg;
+      }
+    }
+  }
+}

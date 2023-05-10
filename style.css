@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  --background-color: #c44444;
+}
+
+html {
+  font-size: 16px;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+body {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background-color);
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.product-wrapper {
+  width: 120rem;
+  height: 67.5rem;
+  grid-template-columns: 50% 50%;
+}
+.product-wrapper {
+  perspective: 5000px;
+}
+.product-wrapper .page-wrapper {
+  position: relative;
+}
+.product-wrapper .page-wrapper .page {
+  position: absolute;
+  inset: 0;
+  transform-origin: left center;
+  transition: all 1s;
+  transform-style: preserve-3d;
+}
+.product-wrapper .page-wrapper .page .front-face, .product-wrapper .page-wrapper .page .back-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+}
+.product-wrapper .page-wrapper .page .back-face {
+  rotate: y 180deg;
+}
+.product-wrapper .page-wrapper .page.flipped {
+  rotate: y -180deg;
+}/*# sourceMappingURL=style.css.map */

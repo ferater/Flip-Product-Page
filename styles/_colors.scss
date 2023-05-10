@@ -1,0 +1,9 @@
+$colors: (
+  "white": #ffffff,
+  "black": #000000,
+  "background-color": #c44444,
+);
+
+body {
+  --background-color: #{map-get($map: $colors, $key: "background-color")};
+}

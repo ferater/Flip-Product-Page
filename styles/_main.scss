@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+html {
+  font-size: 16px;
+}
+//common css
+.flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.grid {
+  display: grid;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+//=========================
+
+body {
+  height: $body-height;
+  font-family: $body-font-family;
+  background-color: $body-background-color;
+}
+
+.container {
+  width: $container-width;
+  height: $container-height;
+}
+.product-wrapper {
+  width: $product-container-width;
+  height: $product-container-height;
+  grid-template-columns: 50% 50%;
+  //page flip
+  @import "page-flip";
+}
