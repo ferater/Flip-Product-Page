@@ -100,7 +100,7 @@ body {
 .product-wrapper .product-info {
   background: url("assets/svg/blob-1.svg") no-repeat 125% -70%, url("assets/svg/blob-2.svg") no-repeat -45% 210%;
   background-color: var(--gray);
-  padding: 3rem 2rem 3rem 4.5rem;
+  padding: 3rem 7rem 3rem 4.5rem;
   display: grid;
   grid-template-rows: 2rem 1fr 3.75rem;
 }
@@ -135,6 +135,7 @@ body {
   scale: 1.2;
 }
 .product-wrapper .product-info .content {
+  padding-right: 7rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
