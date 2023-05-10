@@ -103,6 +103,7 @@ body {
   padding: 3rem 7rem 3rem 4.5rem;
   display: grid;
   grid-template-rows: 2rem 1fr 3.75rem;
+  position: relative;
 }
 .product-wrapper .product-info .header {
   display: flex;
@@ -220,6 +221,21 @@ body {
   font-weight: 600;
   font-size: 1rem;
   line-height: 173.5%;
+}
+.product-wrapper .product-info .page-info {
+  position: absolute;
+  top: 50%;
+  right: -12.5rem;
+  rotate: -90deg;
+  translate: 0 -50%;
+  pointer-events: none;
+}
+.product-wrapper .product-info .page-info h1 {
+  font-weight: 600;
+  font-size: 5rem;
+  line-height: 7.5rem;
+  letter-spacing: 0.1em;
+  color: rgba(var(--primary-rgb), 0.1);
 }
 .product-wrapper .tooltip {
   width: -moz-fit-content;

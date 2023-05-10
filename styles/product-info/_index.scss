@@ -7,8 +7,10 @@
     $product-info-padding-bottom $product-info-padding-left;
   display: grid;
   grid-template-rows: $product-info-header-height 1fr $product-info-footer-height;
+  position: relative;
   @import "header";
   @import "content";
   @import "footer";
   @import "button";
+  @import "page-info";
 }
