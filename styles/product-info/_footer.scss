@@ -7,6 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
     & .advantage {
       width: $product-info-footer-advantage-width;
       height: $product-info-footer-advantage-height;
@@ -15,9 +16,19 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      & .tooltip {
+        top: calc(($product-info-footer-advantage-height / 2) * -1);
+        opacity: 0;
+        visibility: hidden;
+      }
       &:hover {
         & .icon {
           scale: 1.1;
+        }
+        & .tooltip {
+          top: calc($product-info-footer-advantage-height * -1);
+          opacity: 1;
+          visibility: visible;
         }
       }
     }

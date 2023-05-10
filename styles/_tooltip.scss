@@ -1,0 +1,33 @@
+.tooltip {
+  width: fit-content;
+  min-width: $tooltip-min-width;
+  min-height: $tooltip-min-height;
+  padding: $tooltip-min-padding-y $tooltip-min-padding-x;
+  background-color: $tooltip-bg-color;
+  border-radius: calc($tooltip-min-height);
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transition: opacity calc($transition-time / 2), visibility 0s,
+    top $transition-time;
+  z-index: 99;
+  & span {
+    font-weight: $btn-text-weight;
+    font-size: $btn-text-size;
+    line-height: $btn-text-line-height;
+    color: $btn-text-color;
+  }
+  &::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: $tooltip-arrow-size solid transparent;
+    border-top-color: $tooltip-bg-color;
+    position: absolute;
+    bottom: calc(($tooltip-arrow-size * 2) * -1);
+    left: 50%;
+    translate: -50% 0;
+  }
+}

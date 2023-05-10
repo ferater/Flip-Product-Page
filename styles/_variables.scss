@@ -70,6 +70,14 @@ $btn-text-size: 1rem;
 $btn-text-line-height: 173.5%;
 $btn-text-color: var(--on-primary);
 //===========================
+//=====tooltip=====
+$tooltip-min-width: 3rem;
+$tooltip-min-height: 1.5rem;
+$tooltip-min-padding-y: 0.5rem;
+$tooltip-min-padding-x: 0.75rem;
+$tooltip-bg-color: var(--primary);
+$tooltip-arrow-size: 0.75rem;
+//===========================
 //transition
 $icon-transition-time: 0.2s;
 $transition-time: 0.2s;

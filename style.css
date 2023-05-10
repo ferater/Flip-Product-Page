@@ -167,6 +167,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .product-wrapper .product-info .footer .shopping-advantages .advantage {
   width: 3.75rem;
@@ -177,8 +178,18 @@ body {
   justify-content: center;
   align-items: center;
 }
+.product-wrapper .product-info .footer .shopping-advantages .advantage .tooltip {
+  top: -1.875rem;
+  opacity: 0;
+  visibility: hidden;
+}
 .product-wrapper .product-info .footer .shopping-advantages .advantage:hover .icon {
   scale: 1.1;
+}
+.product-wrapper .product-info .footer .shopping-advantages .advantage:hover .tooltip {
+  top: -3.75rem;
+  opacity: 1;
+  visibility: visible;
 }
 .product-wrapper .product-info button.btn {
   width: 18.5rem;
@@ -208,4 +219,37 @@ body {
   font-weight: 600;
   font-size: 1rem;
   line-height: 173.5%;
+}
+.product-wrapper .tooltip {
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 3rem;
+  min-height: 1.5rem;
+  padding: 0.5rem 0.75rem;
+  background-color: var(--primary);
+  border-radius: 1.5rem;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transition: opacity 0.1s, visibility 0s, top 0.2s;
+  z-index: 99;
+}
+.product-wrapper .tooltip span {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 173.5%;
+  color: var(--on-primary);
+}
+.product-wrapper .tooltip::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 0.75rem solid transparent;
+  border-top-color: var(--primary);
+  position: absolute;
+  bottom: -1.5rem;
+  left: 50%;
+  translate: -50% 0;
 }/*# sourceMappingURL=style.css.map */
