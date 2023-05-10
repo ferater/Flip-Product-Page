@@ -26,6 +26,7 @@ html {
 .icon {
   font-size: $icon-size;
   color: $icon-color;
+  transition: scale $icon-transition-time linear;
 }
 
 //mixins

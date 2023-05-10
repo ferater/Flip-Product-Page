@@ -1,0 +1,27 @@
+$product-info-footer-advantage-bg-color: rgba(var(--primary-rgb), 0.3);
+$product-info-footer-advantage-border-raduis: 50%;
+& .footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  & .shopping-advantages {
+    width: calc($product-info-footer-advantage-width * 4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & .advantage {
+      width: $product-info-footer-advantage-width;
+      height: $product-info-footer-advantage-height;
+      background-color: $product-info-footer-advantage-bg-color;
+      border-radius: $product-info-footer-advantage-border-raduis;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        & .icon {
+          scale: 1.1;
+        }
+      }
+    }
+  }
+}

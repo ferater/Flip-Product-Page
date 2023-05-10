@@ -5,6 +5,8 @@
   background-color: $product-info-bg-color;
   padding: $product-info-padding-top $product-info-padding-right
     $product-info-padding-bottom $product-info-padding-left;
+  display: grid;
+  grid-template-rows: $product-info-header-height 1fr $product-info-footer-height;
   @import "header";
   @import "content";
   @import "footer";

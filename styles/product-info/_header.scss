@@ -24,7 +24,6 @@
   & .menu-button {
     & .menu-icon {
       color: $menu-button-icon-color;
-      transition: scale $icon-transition-time;
     }
     &:hover {
       & .menu-icon {

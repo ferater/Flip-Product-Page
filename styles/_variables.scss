@@ -25,9 +25,10 @@ $product-info-padding-top: 3rem;
 $product-info-padding-right: 2rem;
 $product-info-padding-bottom: 3rem;
 $product-info-padding-left: 4.5rem;
-//product info header
+//****product info header
+$product-info-header-height: 2rem;
 $product-info-brand-width: 12rem;
-$product-info-brand-height: 2rem;
+$product-info-brand-height: $product-info-header-height;
 //brand text
 $product-info-brand-text-weight: 600;
 $product-info-brand-text-size: 1.25rem;
@@ -35,6 +36,11 @@ $product-info-brand-text-line-height: 1.85rem;
 $product-info-brand-text-letter-spacing: 0.1em;
 //menu button
 $menu-button-icon-color: var(--text);
+//*****content
+//*****footer
+$product-info-footer-height: 3.75rem;
+$product-info-footer-advantage-width: 3.75rem;
+$product-info-footer-advantage-height: 3.75rem;
 //==============================================
 //transition
 $icon-transition-time: 0.2s;
