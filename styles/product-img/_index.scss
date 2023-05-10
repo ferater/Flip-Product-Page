@@ -1,0 +1,31 @@
+& .product-img {
+  background: url("assets/svg/blob-3.svg") no-repeat
+    $product-img-bg-blob-position;
+  background-color: $product-img-bg-color;
+  padding: $product-img-padding-y $product-img-padding-x;
+  display: grid;
+  grid-template-rows: $product-img-header-height 1fr;
+  // product img header
+  @import "header";
+  & .content {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    & .page-info-1,
+    & .page-info-2 {
+      & h1 {
+        font-weight: $product-img-bg-info-text-weight;
+        font-size: $product-img-bg-info-text-size;
+        color: $product-img-bg-info-text-color;
+      }
+    }
+    & .page-info-1 {
+      top: $product-img-bg-info-text-1-position-top;
+      left: $product-img-bg-info-text-1-position-left;
+    }
+    & .page-info-2 {
+      top: $product-img-bg-info-text-2-position-top;
+      right: $product-img-bg-info-text-2-position-right;
+    }
+  }
+}

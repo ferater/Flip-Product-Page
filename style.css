@@ -10,6 +10,8 @@
 :root {
   --primary: #c44444;
   --on-primary: #ffffff;
+  --secondary: #bc2e2e;
+  --on-secondary: #ffffff;
   --white: #ffffff;
   --black: #000000;
   --gray: #ded8d8;
@@ -271,4 +273,45 @@ body {
   line-height: 7.5rem;
   letter-spacing: 0.1em;
   color: rgba(var(--primary-rgb), 0.1);
+}
+.product-wrapper .product-img {
+  background: url("assets/svg/blob-3.svg") no-repeat 60% -900%;
+  background-color: var(--secondary);
+  padding: 3rem 3rem;
+  display: grid;
+  grid-template-rows: 3.125rem 1fr;
+}
+.product-wrapper .product-img .header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.product-wrapper .product-img .header .next-page-button {
+  height: 3.125rem;
+  cursor: pointer;
+}
+.product-wrapper .product-img .header .next-page-button .next-page-icon {
+  font-size: 3.125rem;
+  color: var(--white);
+}
+.product-wrapper .product-img .header .next-page-button:hover .next-page-icon {
+  scale: 1.1;
+}
+.product-wrapper .product-img .content {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.product-wrapper .product-img .content .page-info-1 h1, .product-wrapper .product-img .content .page-info-2 h1 {
+  font-weight: 800;
+  font-size: 9rem;
+  color: rgba(var(--white-rgb), 0.06);
+}
+.product-wrapper .product-img .content .page-info-1 {
+  top: 23%;
+  left: 17%;
+}
+.product-wrapper .product-img .content .page-info-2 {
+  top: 28%;
+  right: 17%;
 }/*# sourceMappingURL=style.css.map */

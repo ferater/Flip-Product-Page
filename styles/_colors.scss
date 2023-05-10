@@ -4,6 +4,8 @@
 $colors: (
   "primary": #c44444,
   "on-primary": #ffffff,
+  "secondary": #bc2e2e,
+  "on-secondary": #ffffff,
   "white": #ffffff,
   "black": #000000,
   "gray": #ded8d8,
@@ -13,6 +15,8 @@ $colors: (
 :root {
   --primary: #{map-get($map: $colors, $key: "primary")};
   --on-primary: #{map-get($map: $colors, $key: "on-primary")};
+  --secondary: #{map-get($map: $colors, $key: "secondary")};
+  --on-secondary: #{map-get($map: $colors, $key: "on-secondary")};
   --white: #{map-get($map: $colors, $key: "white")};
   --black: #{map-get($map: $colors, $key: "black")};
   --gray: #{map-get($map: $colors, $key: "gray")};

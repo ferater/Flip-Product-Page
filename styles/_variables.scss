@@ -68,7 +68,24 @@ $product-page-info-position-top: 50%;
 $product-page-info-position-right: -12.5rem;
 $product-page-info-rotate-angle: -90deg;
 //==============================================
-
+//=====product image=====
+$product-img-padding-y: 3rem;
+$product-img-padding-x: 3rem;
+$product-img-bg-blob-position: 60% -900%;
+$product-img-bg-color: var(--secondary);
+$product-img-header-height: 3.125rem;
+//page bg info (34 - 36)
+$product-img-bg-info-text-weight: 800;
+$product-img-bg-info-text-size: 9rem;
+$product-img-bg-info-text-color: rgba(
+  $color: var(--white-rgb),
+  $alpha: 0.06,
+);
+$product-img-bg-info-text-1-position-top: 23%;
+$product-img-bg-info-text-1-position-left: 17%;
+$product-img-bg-info-text-2-position-top: 28%;
+$product-img-bg-info-text-2-position-right: 17%;
+//===========================
 //=====button=====
 $btn-width: 18.5rem;
 $btn-height: 3.75rem;
@@ -88,6 +105,7 @@ $tooltip-min-padding-x: 0.75rem;
 $tooltip-bg-color: var(--primary);
 $tooltip-arrow-size: 0.75rem;
 //===========================
+
 //transition
 $icon-transition-time: 0.2s;
 $transition-time: 0.2s;

@@ -1,0 +1,20 @@
+$next-page-button-size: 3.125rem;
+$next-page-button-color: var(--white);
+& .header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  & .next-page-button {
+    height: $product-img-header-height;
+    cursor: pointer;
+    & .next-page-icon {
+      font-size: $next-page-button-size;
+      color: $next-page-button-color;
+    }
+    &:hover {
+      & .next-page-icon {
+        scale: 1.1;
+      }
+    }
+  }
+}
