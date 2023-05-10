@@ -28,7 +28,7 @@ $product-info-padding-left: 4.5rem;
 //****product info header
 $product-info-header-height: 2rem;
 $product-info-brand-width: 12rem;
-$product-info-brand-height: $product-info-header-height;
+$product-info-brand-height: 2rem;
 //brand text
 $product-info-brand-text-weight: 600;
 $product-info-brand-text-size: 1.25rem;
@@ -37,10 +37,26 @@ $product-info-brand-text-letter-spacing: 0.1em;
 //menu button
 $menu-button-icon-color: var(--text);
 //*****content
+//product title
+$product-title-color: rgba(
+  $color: var(--text-rgb),
+  $alpha: 0.75,
+);
+$product-title-second-color: var(--primary);
+$product-title-font-weight: 700;
+$product-title-font-size: 3.75rem;
+$product-title-line-height: 5.6rem;
+//product description
+$product-description-font-weight: 400;
+$product-description-font-size: 1.25rem;
+$product-description-line-height: 2.2rem;
 //*****footer
 $product-info-footer-height: 3.75rem;
+//shopping advantages
 $product-info-footer-advantage-width: 3.75rem;
 $product-info-footer-advantage-height: 3.75rem;
+$product-info-footer-advantage-bg-color: rgba(var(--primary-rgb), 0.3);
+$product-info-footer-advantage-border-raduis: 50%;
 //==============================================
 //transition
 $icon-transition-time: 0.2s;

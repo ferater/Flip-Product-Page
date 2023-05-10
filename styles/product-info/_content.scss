@@ -1,0 +1,23 @@
+& .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  & .product-title {
+    font-weight: $product-title-font-weight;
+    font-size: $product-title-font-size;
+    line-height: $product-title-line-height;
+    color: $product-title-color;
+    & span {
+      color: $product-title-second-color;
+    }
+  }
+  & .product-description {
+    font-weight: $product-description-font-weight;
+    font-size: $product-description-font-size;
+    line-height: $product-description-line-height;
+    color: $product-title-color;
+    & span {
+      color: $product-title-second-color;
+    }
+  }
+}

@@ -133,6 +133,29 @@ body {
 .product-wrapper .product-info .header .menu-button:hover .menu-icon {
   scale: 1.2;
 }
+.product-wrapper .product-info .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.product-wrapper .product-info .content .product-title {
+  font-weight: 700;
+  font-size: 3.75rem;
+  line-height: 5.6rem;
+  color: rgba(var(--text-rgb), 0.75);
+}
+.product-wrapper .product-info .content .product-title span {
+  color: var(--primary);
+}
+.product-wrapper .product-info .content .product-description {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 2.2rem;
+  color: rgba(var(--text-rgb), 0.75);
+}
+.product-wrapper .product-info .content .product-description span {
+  color: var(--primary);
+}
 .product-wrapper .product-info .footer {
   display: flex;
   justify-content: flex-end;
