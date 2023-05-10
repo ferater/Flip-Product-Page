@@ -1,9 +1,13 @@
+@function hexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
 $colors: (
   "white": #ffffff,
   "black": #000000,
-  "background-color": #c44444,
+  "body-bg-color": #c44444,
 );
 
 body {
-  --background-color: #{map-get($map: $colors, $key: "background-color")};
+  --body-bg-color: #{map-get($map: $colors, $key: "body-bg-color")};
+  --black-rgb: #{hexToRGB(map-get($map: $colors, $key: "black"))};
 }

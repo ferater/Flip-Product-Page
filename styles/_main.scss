@@ -38,6 +38,8 @@ body {
   width: $product-wrapper-width;
   height: $product-wrapper-height;
   grid-template-columns: 50% 50%;
+  border-radius: $product-wrapper-border-radius;
+  box-shadow: $product-wrapper-box-shadow;
   //page flip
   @import "page-flip";
 }
