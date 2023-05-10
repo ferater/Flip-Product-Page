@@ -7,8 +7,34 @@ $body-font-family: "Poppins", sans-serif;
 $container-width: 100%;
 $container-height: 100%;
 
+//icons
+$icon-size: 2.35rem;
+$icon-color: var(--primary);
+
 //product container
 $product-wrapper-width: 120rem;
 $product-wrapper-height: 67.5rem;
 $product-wrapper-border-radius: 2rem;
 $product-wrapper-box-shadow: 0px 0px 150px rgba(var(--black-rgb), 0.3);
+
+//====product info=====
+$product-info-bg-color: var(--gray);
+$product-info-bg-blob-1-position: 125% -70%;
+$product-info-bg-blob-2-position: -45% 210%;
+$product-info-padding-top: 3rem;
+$product-info-padding-right: 2rem;
+$product-info-padding-bottom: 3rem;
+$product-info-padding-left: 4.5rem;
+//product info header
+$product-info-brand-width: 12rem;
+$product-info-brand-height: 2rem;
+//brand text
+$product-info-brand-text-weight: 600;
+$product-info-brand-text-size: 1.25rem;
+$product-info-brand-text-line-height: 1.85rem;
+$product-info-brand-text-letter-spacing: 0.1em;
+//menu button
+$menu-button-icon-color: var(--text);
+//==============================================
+//transition
+$icon-transition-time: 0.2s;

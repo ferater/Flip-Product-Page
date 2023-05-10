@@ -11,12 +11,13 @@
   --primary: #c44444;
   --white: #ffffff;
   --black: #000000;
+  --gray: #ded8d8;
   --text: #414042;
   --white-rgb: 255, 255, 255;
   --black-rgb: 0, 0, 0;
+  --gray-rgb: 222, 216, 216;
+  --text-rgb: 65, 64, 66;
   --primary-rgb: 196, 68, 68;
-  --primary-dark-10: #a23333;
-  --primary-light-10: #d06b6b;
 }
 
 html {
@@ -45,6 +46,11 @@ html {
 
 .absolute {
   position: absolute;
+}
+
+.icon {
+  font-size: 2.35rem;
+  color: var(--primary);
 }
 
 body {
@@ -88,4 +94,40 @@ body {
 }
 .product-wrapper .page-wrapper .page.flipped {
   rotate: y -180deg;
+}
+.product-wrapper .product-info {
+  background: url("assets/svg/blob-1.svg") no-repeat 125% -70%, url("assets/svg/blob-2.svg") no-repeat -45% 210%;
+  background-color: var(--gray);
+  padding: 3rem 2rem 3rem 4.5rem;
+}
+.product-wrapper .product-info .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-wrapper .product-info .header .brand {
+  width: 12rem;
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-wrapper .product-info .header .brand img.brand-logo {
+  width: 2rem;
+  height: 2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.product-wrapper .product-info .header .brand .brand-text {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.85rem;
+  letter-spacing: 0.1em;
+}
+.product-wrapper .product-info .header .menu-button .menu-icon {
+  color: var(--text);
+  transition: scale 0.2s;
+}
+.product-wrapper .product-info .header .menu-button:hover .menu-icon {
+  scale: 1.2;
 }/*# sourceMappingURL=style.css.map */

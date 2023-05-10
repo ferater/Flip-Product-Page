@@ -22,6 +22,14 @@ html {
 .absolute {
   position: absolute;
 }
+
+.icon {
+  font-size: $icon-size;
+  color: $icon-color;
+}
+
+//mixins
+
 //=========================
 
 body {

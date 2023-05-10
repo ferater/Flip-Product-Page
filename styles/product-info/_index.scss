@@ -1,4 +1,10 @@
 & .product-info {
+  background: url("assets/svg/blob-1.svg") no-repeat
+      $product-info-bg-blob-1-position,
+    url("assets/svg/blob-2.svg") no-repeat $product-info-bg-blob-2-position;
+  background-color: $product-info-bg-color;
+  padding: $product-info-padding-top $product-info-padding-right
+    $product-info-padding-bottom $product-info-padding-left;
   @import "header";
   @import "content";
   @import "footer";

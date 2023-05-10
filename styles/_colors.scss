@@ -4,6 +4,7 @@
 $colors: (
   "white": #ffffff,
   "black": #000000,
+  "gray": #ded8d8,
   "text": #414042,
   "primary": #c44444,
 );
@@ -12,12 +13,12 @@ $colors: (
   --primary: #{map-get($map: $colors, $key: "primary")};
   --white: #{map-get($map: $colors, $key: "white")};
   --black: #{map-get($map: $colors, $key: "black")};
+  --gray: #{map-get($map: $colors, $key: "gray")};
   --text: #{map-get($map: $colors, $key: "text")};
   //rgb colors
   --white-rgb: #{hexToRGB(map-get($map: $colors, $key: "white"))};
   --black-rgb: #{hexToRGB(map-get($map: $colors, $key: "black"))};
+  --gray-rgb: #{hexToRGB(map-get($map: $colors, $key: "gray"))};
+  --text-rgb: #{hexToRGB(map-get($map: $colors, $key: "text"))};
   --primary-rgb: #{hexToRGB(map-get($map: $colors, $key: "primary"))};
-  //dark & light colors
-  --primary-dark-10: #{darken(map-get($map: $colors, $key: "primary"), 10)};
-  --primary-light-10: #{lighten(map-get($map: $colors, $key: "primary"), 10)};
 }

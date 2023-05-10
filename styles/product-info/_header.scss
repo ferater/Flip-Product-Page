@@ -1,2 +1,35 @@
+//=============================
 & .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & .brand {
+    width: $product-info-brand-width;
+    height: $product-info-brand-height;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & img.brand-logo {
+      width: $product-info-brand-height;
+      height: $product-info-brand-height;
+      object-fit: cover;
+    }
+    & .brand-text {
+      font-weight: $product-info-brand-text-weight;
+      font-size: $product-info-brand-text-size;
+      line-height: $product-info-brand-text-line-height;
+      letter-spacing: $product-info-brand-text-letter-spacing;
+    }
+  }
+  & .menu-button {
+    & .menu-icon {
+      color: $menu-button-icon-color;
+      transition: scale $icon-transition-time;
+    }
+    &:hover {
+      & .menu-icon {
+        scale: 1.2;
+      }
+    }
+  }
 }
