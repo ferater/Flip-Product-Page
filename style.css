@@ -8,12 +8,15 @@
 }
 
 :root {
-  --bg: #c44444;
+  --primary: #c44444;
+  --white: #ffffff;
+  --black: #000000;
+  --text: #414042;
   --white-rgb: 255, 255, 255;
   --black-rgb: 0, 0, 0;
-  --bg-rgb: 196, 68, 68;
-  --bg-dark-10: #a23333;
-  --bg-light-10: #d06b6b;
+  --primary-rgb: 196, 68, 68;
+  --primary-dark-10: #a23333;
+  --primary-light-10: #d06b6b;
 }
 
 html {
@@ -47,7 +50,7 @@ html {
 body {
   height: 100vh;
   font-family: "Poppins", sans-serif;
-  background-color: var(--bg);
+  background-color: var(--primary);
 }
 
 .container {
@@ -56,7 +59,6 @@ body {
 }
 
 .product-wrapper {
-  background-color: var(--bg-dark-10);
   width: 120rem;
   height: 67.5rem;
   grid-template-columns: 50% 50%;
