@@ -1,6 +1,8 @@
 & .product-img {
-  background: url("assets/svg/blob-3.svg") no-repeat
-    $product-img-bg-blob-position;
+  background-image: url("assets/svg/blob-3.svg");
+  background-repeat: no-repeat;
+  background-size: $product-img-bg-blob-size;
+  background-position: $product-img-bg-blob-position;
   background-color: $product-img-bg-color;
   padding: $product-img-padding-y $product-img-padding-x;
   display: grid;

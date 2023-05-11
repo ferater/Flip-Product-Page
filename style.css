@@ -241,7 +241,10 @@ body {
   line-height: 173.5%;
 }
 .product-wrapper .product-img {
-  background: url("assets/svg/blob-3.svg") no-repeat 60% -900%;
+  background-image: url("assets/svg/blob-3.svg");
+  background-repeat: no-repeat;
+  background-size: 80rem;
+  background-position: -5rem 27rem;
   background-color: var(--secondary);
   padding: 3rem 3rem;
   display: grid;
