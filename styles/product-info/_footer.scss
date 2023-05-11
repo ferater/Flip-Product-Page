@@ -1,6 +1,6 @@
 & .footer {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   & .shopping-advantages {
     width: calc($product-info-footer-advantage-width * 4);
