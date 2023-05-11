@@ -74,11 +74,10 @@ body {
   grid-template-columns: 50% 50%;
   border-radius: 2rem;
   box-shadow: 0px 0px 150px rgba(var(--black-rgb), 0.3);
-}
-.product-wrapper {
-  perspective: 5000px;
+  perspective: 100px;
 }
 .product-wrapper .page-wrapper {
+  perspective: 5000px;
   position: relative;
 }
 .product-wrapper .page-wrapper .page {
@@ -134,7 +133,7 @@ body {
 .product-wrapper .product-info .header .brand .brand-text {
   font-weight: 600;
   font-size: 1.25rem;
-  line-height: 1.85rem;
+  line-height: 1.5rem;
   letter-spacing: 0.1em;
 }
 .product-wrapper .product-info .header .menu-button .menu-icon {

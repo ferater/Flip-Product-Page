@@ -49,6 +49,7 @@ body {
   grid-template-columns: 50% 50%;
   border-radius: $product-wrapper-border-radius;
   box-shadow: $product-wrapper-box-shadow;
+  perspective: 100px;
   //page flip
   @import "page-flip";
   //product info

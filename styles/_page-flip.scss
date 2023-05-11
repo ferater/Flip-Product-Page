@@ -1,7 +1,7 @@
 $page-flip-perspective: 5000px;
 & {
-  perspective: $page-flip-perspective;
   & .page-wrapper {
+    perspective: $page-flip-perspective;
     position: relative;
     & .page {
       position: absolute;
