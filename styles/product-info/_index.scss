@@ -1,7 +1,13 @@
 & .product-info {
-  background: url("assets/svg/blob-1.svg") no-repeat
-      $product-info-bg-blob-1-position,
-    url("assets/svg/blob-2.svg") no-repeat $product-info-bg-blob-2-position;
+  // background: url("assets/svg/blob-1.svg") no-repeat
+  //     $product-info-bg-blob-1-position,
+  //   url("assets/svg/blob-2.svg") no-repeat $product-info-bg-blob-2-position;
+  background-image: url("assets/svg/blob-1.svg"), url("assets/svg/blob-2.svg");
+  background-repeat: no-repeat;
+  background-size: $product-info-bg-blob-1-size, $product-info-bg-blob-2-size;
+  background-position: $product-info-bg-blob-1-position,
+    $product-info-bg-blob-2-position;
+  // background-position-x: ;
   background-color: $product-info-bg-color;
   padding: $product-info-padding-top $product-info-padding-right
     $product-info-padding-bottom $product-info-padding-left;
