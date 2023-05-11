@@ -1,0 +1,29 @@
+& .content {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  & img {
+    width: 90%;
+    height: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+}
+& .page-info-1,
+& .page-info-2 {
+  & h1 {
+    font-weight: $product-img-bg-info-text-weight;
+    font-size: $product-img-bg-info-text-size;
+    color: $product-img-bg-info-text-color;
+  }
+}
+& .page-info-1 {
+  top: $product-img-1-bg-info-text-1-position-top;
+  left: $product-img-1-bg-info-text-1-position-left;
+}
+& .page-info-2 {
+  top: $product-img-1-bg-info-text-2-position-top;
+  right: $product-img-1-bg-info-text-2-position-right;
+}
