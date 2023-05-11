@@ -110,7 +110,7 @@ body {
   background-image: url("assets/svg/blob-1.svg"), url("assets/svg/blob-2.svg");
   background-repeat: no-repeat;
   background-size: 50rem, 50rem;
-  background-position: 15rem -30rem, -15rem 60rem;
+  background-position: 15rem -30rem, -25rem 60rem;
   background-color: var(--gray);
   padding: 3rem 7rem 3rem 4.5rem;
   display: grid;
