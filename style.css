@@ -235,7 +235,7 @@ body {
   pointer-events: none;
 }
 .product-wrapper .product-img .content img {
-  width: 90%;
+  width: auto;
   height: auto;
   position: absolute;
   right: 0;
@@ -248,12 +248,12 @@ body {
   color: rgba(var(--white-rgb), 0.06);
 }
 .product-wrapper .product-img .page-info-1 {
-  top: 24%;
-  left: 15%;
+  top: 18%;
+  left: 16%;
 }
 .product-wrapper .product-img .page-info-2 {
-  top: 28%;
-  right: 12%;
+  top: 26%;
+  right: 10%;
 }
 .product-wrapper .page-wrapper {
   perspective: 6000px;
