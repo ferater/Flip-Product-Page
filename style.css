@@ -23,41 +23,6 @@
   --primary-rgb: 196, 68, 68;
 }
 
-@media screen and (max-width: 767px) {
-  body {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 900px) {
-  html {
-    font-size: 6.25px;
-  }
-}
-@media screen and (min-width: 901px) and (max-width: 1024px) {
-  html {
-    font-size: 7.25px;
-  }
-}
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
-  html {
-    font-size: 8.25px;
-  }
-}
-@media screen and (min-width: 1201px) and (max-width: 1366px) {
-  html {
-    font-size: 8.75px;
-  }
-}
-@media screen and (min-width: 1367px) and (max-width: 1440px) {
-  html {
-    font-size: 10px;
-  }
-}
-@media screen and (min-width: 1441px) and (max-width: 1600px) {
-  html {
-    font-size: 12px;
-  }
-}
 .flex {
   display: flex;
 }
@@ -347,25 +312,56 @@ body {
   letter-spacing: 0.1em;
   color: rgba(var(--primary-rgb), 0.1);
 }
-.product-wrapper .next-page-button {
-  height: 3.125rem;
-  cursor: pointer;
-}
-.product-wrapper .next-page-button .next-page-icon {
-  font-size: 3.125rem;
-  color: var(--white);
-}
-.product-wrapper .next-page-button:hover .next-page-icon {
-  scale: 1.1;
-}
+.product-wrapper .next-page-button,
 .product-wrapper .prev-page-button {
   height: 3.125rem;
   cursor: pointer;
 }
-.product-wrapper .prev-page-button .prev-page-icon {
+.product-wrapper .next-page-button .icon,
+.product-wrapper .prev-page-button .icon {
   font-size: 3.125rem;
+  color: var(--white);
+}
+.product-wrapper .next-page-button:hover .icon,
+.product-wrapper .prev-page-button:hover .icon {
+  scale: 1.1;
+}
+.product-wrapper .prev-page-button .icon {
   color: var(--text);
 }
-.product-wrapper .prev-page-button:hover .prev-page-icon {
-  scale: 1.1;
+
+@media screen and (max-width: 767px) {
+  body {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  html {
+    font-size: 6.25px;
+  }
+}
+@media screen and (min-width: 901px) and (max-width: 1024px) {
+  html {
+    font-size: 7.25px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  html {
+    font-size: 8.25px;
+  }
+}
+@media screen and (min-width: 1201px) and (max-width: 1366px) {
+  html {
+    font-size: 8.75px;
+  }
+}
+@media screen and (min-width: 1367px) and (max-width: 1440px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 1441px) and (max-width: 1600px) {
+  html {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=style.css.map */

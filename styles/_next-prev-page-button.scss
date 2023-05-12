@@ -1,29 +1,19 @@
-$next-page-button-size: 3.125rem;
-$next-page-button-color: var(--white);
-$prev-page-button-color: var(--text);
-.next-page-button {
+.next-page-button,
+.prev-page-button {
   height: $product-img-header-height;
   cursor: pointer;
-  & .next-page-icon {
+  & .icon {
     font-size: $next-page-button-size;
     color: $next-page-button-color;
   }
   &:hover {
-    & .next-page-icon {
+    & .icon {
       scale: 1.1;
     }
   }
 }
 .prev-page-button {
-  height: $product-img-header-height;
-  cursor: pointer;
-  & .prev-page-icon {
-    font-size: $next-page-button-size;
+  & .icon {
     color: $prev-page-button-color;
-  }
-  &:hover {
-    & .prev-page-icon {
-      scale: 1.1;
-    }
   }
 }
