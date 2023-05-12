@@ -7,6 +7,7 @@
   padding: $product-img-padding-y $product-img-padding-x;
   display: grid;
   grid-template-rows: $product-img-header-height 1fr;
+  overflow: hidden;
   // product img header
   @import "header";
   // product img content

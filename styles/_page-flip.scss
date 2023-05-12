@@ -15,6 +15,10 @@ $page-flip-perspective: 6000px;
         inset: 0;
         backface-visibility: hidden;
       }
+      & .front-face {
+        border-radius: 0 $product-wrapper-border-radius
+          $product-wrapper-border-radius 0;
+      }
       & .back-face {
         rotate: y 180deg;
       }

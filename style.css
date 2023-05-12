@@ -78,6 +78,7 @@ body {
   background-position: 15rem -30rem, -25rem 60rem;
   background-color: var(--gray);
   padding: 3rem 7rem 3rem 4.5rem;
+  border-radius: 2rem 0 0 2rem;
   display: grid;
   grid-template-rows: 2rem 1fr 3.75rem;
   position: relative;
@@ -214,6 +215,7 @@ body {
   padding: 3rem 3rem;
   display: grid;
   grid-template-rows: 3.125rem 1fr;
+  overflow: hidden;
 }
 .product-wrapper .product-img .header {
   display: flex;
@@ -261,6 +263,9 @@ body {
   position: absolute;
   inset: 0;
   backface-visibility: hidden;
+}
+.product-wrapper .page-wrapper .page .front-face {
+  border-radius: 0 2rem 2rem 0;
 }
 .product-wrapper .page-wrapper .page .back-face {
   rotate: y 180deg;
