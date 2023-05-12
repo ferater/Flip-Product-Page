@@ -1,23 +1,23 @@
 @function hexToRGB($hex) {
   @return red($hex), green($hex), blue($hex);
 }
-$colors: (
+$light: (
   "primary": #c44444,
   "on-primary": #ffffff,
   "text": #414042,
 );
 
-:root {
-  --primary: #{map-get($map: $colors, $key: "primary")};
-  --on-primary: #{map-get($map: $colors, $key: "on-primary")};
+body {
+  --primary: #{map-get($map: $light, $key: "primary")};
+  --on-primary: #{map-get($map: $light, $key: "on-primary")};
   --mix-primary: #{mix(
-      map-get($map: $colors, $key: "primary"),
-      map-get($map: $colors, $key: "on-primary"),
+      map-get($map: $light, $key: "primary"),
+      map-get($map: $light, $key: "on-primary"),
       15%
     )};
-  --text: #{map-get($map: $colors, $key: "text")};
-  //rgb colors
-  --primary-rgb: #{hexToRGB(map-get($map: $colors, $key: "primary"))};
-  --on-primary-rgb: #{hexToRGB(map-get($map: $colors, $key: "on-primary"))};
-  --text-rgb: #{hexToRGB(map-get($map: $colors, $key: "text"))};
+  --text: #{map-get($map: $light, $key: "text")};
+  //rgb light
+  --primary-rgb: #{hexToRGB(map-get($map: $light, $key: "primary"))};
+  --on-primary-rgb: #{hexToRGB(map-get($map: $light, $key: "on-primary"))};
+  --text-rgb: #{hexToRGB(map-get($map: $light, $key: "text"))};
 }

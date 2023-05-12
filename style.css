@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-:root {
+body {
   --primary: #c44444;
   --on-primary: #ffffff;
   --mix-primary: #f6e3e3;
