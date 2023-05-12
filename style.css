@@ -17,6 +17,7 @@
   --gray: #ded8d8;
   --text: #414042;
   --white-rgb: 255, 255, 255;
+  --on-primary-rgb: 255, 255, 255;
   --black-rgb: 0, 0, 0;
   --gray-rgb: 222, 216, 216;
   --text-rgb: 65, 64, 66;
@@ -258,6 +259,7 @@ body {
   transform-origin: left center;
   transition: all 1s;
   transform-style: preserve-3d;
+  z-index: var(--page-index);
 }
 .product-wrapper .page-wrapper .page .front-face, .product-wrapper .page-wrapper .page .back-face {
   position: absolute;
@@ -272,6 +274,21 @@ body {
 }
 .product-wrapper .page-wrapper .page.flipped {
   rotate: y -180deg;
+}
+.product-wrapper .page-wrapper .back-cover-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.product-wrapper .page-wrapper .back-cover-inner h1 {
+  color: rgba(var(--on-primary-rgb), 0.5);
+}
+.product-wrapper .page-wrapper .back-cover-inner img {
+  width: 100%;
+  height: auto;
 }
 .product-wrapper .tooltip {
   width: -moz-fit-content;

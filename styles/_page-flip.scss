@@ -9,6 +9,7 @@ $page-flip-perspective: 6000px;
       transform-origin: left center;
       transition: all 1s;
       transform-style: preserve-3d;
+      z-index: var(--page-index);
       & .front-face,
       & .back-face {
         position: absolute;
@@ -24,6 +25,21 @@ $page-flip-perspective: 6000px;
       }
       &.flipped {
         rotate: y -180deg;
+      }
+    }
+    .back-cover-inner {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      & h1 {
+        color: rgba($color: var(--on-primary-rgb), $alpha: 0.5);
+      }
+      & img {
+        width: 100%;
+        height: auto;
       }
     }
   }

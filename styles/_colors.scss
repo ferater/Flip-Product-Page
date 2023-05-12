@@ -23,6 +23,7 @@ $colors: (
   --text: #{map-get($map: $colors, $key: "text")};
   //rgb colors
   --white-rgb: #{hexToRGB(map-get($map: $colors, $key: "white"))};
+  --on-primary-rgb: #{hexToRGB(map-get($map: $colors, $key: "on-primary"))};
   --black-rgb: #{hexToRGB(map-get($map: $colors, $key: "black"))};
   --gray-rgb: #{hexToRGB(map-get($map: $colors, $key: "gray"))};
   --text-rgb: #{hexToRGB(map-get($map: $colors, $key: "text"))};
