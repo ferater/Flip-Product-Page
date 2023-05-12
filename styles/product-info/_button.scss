@@ -11,7 +11,7 @@ button.btn {
   align-items: center;
   transition: all $transition-time;
   &:hover {
-    background-color: darken($color: map-get($colors, "primary"), $amount: 10);
+    background-color: $btn-hover-color;
   }
   &:active {
     scale: 0.99;

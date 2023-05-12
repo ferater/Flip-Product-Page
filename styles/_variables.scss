@@ -11,10 +11,10 @@ $container-height: 100%;
 $product-wrapper-width: 120rem;
 $product-wrapper-height: 67.5rem;
 $product-wrapper-border-radius: 2rem;
-$product-wrapper-box-shadow: 0px 0px 150px rgba(var(--black-rgb), 0.3);
+$product-wrapper-box-shadow: 0px 0px 150px rgba(var(--text-rgb), 0.5);
 
 //====product info=====
-$product-info-bg-color: var(--gray);
+$product-info-bg-color: var(--mix-primary);
 $product-info-bg-blob-1-size: 50rem;
 $product-info-bg-blob-1-position: 15rem -30rem;
 $product-info-bg-blob-2-size: 50rem;
@@ -71,13 +71,13 @@ $product-img-padding-y: 3rem;
 $product-img-padding-x: 3rem;
 $product-img-bg-blob-size: 80rem;
 $product-img-bg-blob-position: -5rem 27rem;
-$product-img-bg-color: var(--secondary);
+$product-img-bg-color: darken(map-get($colors, "primary"), 10);
 $product-img-header-height: 3.125rem;
 //page bg info (34 - 36)
 $product-img-bg-info-text-weight: 800;
 $product-img-bg-info-text-size: 9rem;
 $product-img-bg-info-text-color: rgba(
-  $color: var(--white-rgb),
+  $color: var(--on-primary-rgb),
   $alpha: 0.06,
 );
 //page info img page 1 positions
@@ -96,6 +96,10 @@ $btn-text-weight: 600;
 $btn-text-size: 1rem;
 $btn-text-line-height: 173.5%;
 $btn-text-color: var(--on-primary);
+$btn-hover-color: darken(
+  $color: map-get($colors, "primary"),
+  $amount: 10,
+);
 //===========================
 //=====tooltip=====
 $tooltip-min-width: 3rem;
@@ -110,7 +114,7 @@ $icon-size: 2.35rem;
 $icon-color: var(--primary);
 //next - prev page icons
 $next-page-button-size: 3.125rem; //both button sizes are same
-$next-page-button-color: var(--white);
+$next-page-button-color: var(--on-primary);
 $prev-page-button-color: var(--text);
 
 //transition
