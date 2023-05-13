@@ -4,7 +4,10 @@
 
 # Flip Product Page
 
+[youtube video](https://www.youtube.com/watch?v=VbSat6XaDgI)
+
 [live demo](https://ferater.github.io/Flip-Product-Page/)
+
 
 [original figma](https://www.figma.com/community/file/1232699175688399885)
 
