@@ -1,7 +1,4 @@
-![alt text](https://raw.githubusercontent.com/ferater/Flip-Product-Page/main/assets/img/ss.gif?raw=true)
-
-![alt text](https://github.com/ferater/Flip-Product-Page/blob/main/assets/img/ScreenShot.png)
-
+<!-- ![alt text](https://raw.githubusercontent.com/ferater/Flip-Product-Page/main/assets/img/ss.gif?raw=true) -->
 # Flip Product Page
 
 [youtube video](https://www.youtube.com/watch?v=VbSat6XaDgI)
@@ -12,6 +9,8 @@
 [original figma](https://www.figma.com/community/file/1232699175688399885)
 
 [Images source](https://unsplash.com/es/@zvandrei)
+
+![alt text](https://github.com/ferater/Flip-Product-Page/blob/main/assets/img/ScreenShot.png)
 
 ## Setup
 ```
