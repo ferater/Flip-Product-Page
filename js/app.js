@@ -19,3 +19,18 @@ Array.from(pages).forEach((page, index) => {
     page.classList.remove("flipped");
   });
 });
+
+let a = 0;
+let b = 64;
+const incraseFontSize = () => {
+  console.log("inc");
+  b += 1;
+  if (b >= 99) b = 64;
+  document.documentElement.style.fontSize = a + "." + b + "vw";
+};
+const decraseFontSize = () => {
+  console.log("dec");
+  b -= 1;
+  if (b <= 40) b = 64;
+  document.documentElement.style.fontSize = a + "." + b + "vw";
+};

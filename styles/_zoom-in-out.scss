@@ -1,0 +1,23 @@
+& .zoom-in-out {
+  width: 70px;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid var(--text);
+  border-radius: 1.5rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & .icon {
+    color: var(--on-primary);
+    cursor: pointer;
+    &:hover {
+      scale: 1.2;
+    }
+  }
+  & .decrase-text {
+    font-size: 1.5rem;
+  }
+}

@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+html {
+  font-size: 0.64vw;
+}
 //common css
 .flex {
   display: flex;
@@ -38,6 +41,8 @@ body {
 .container {
   width: $container-width;
   height: $container-height;
+  //zoom in out buttons
+  @import "zoom-in-out";
 }
 .product-wrapper {
   width: $product-wrapper-width;
@@ -58,5 +63,3 @@ body {
   //next - prev page buttons
   @import "next-prev-page-button";
 }
-
-@import "media-queries";
