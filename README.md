@@ -1,6 +1,6 @@
 ![alt text](https://raw.githubusercontent.com/ferater/Flip-Product-Page/main/assets/img/ss.gif?raw=true)
 
-![alt text](https://raw.githubusercontent.com/ferater/Flip-Product-Page/main/assets/img/secreenshot.png?raw=true)
+![alt text](https://github.com/ferater/Flip-Product-Page/blob/main/assets/img/ScreenShot.png)
 
 # Flip Product Page
 
