@@ -4,7 +4,11 @@
 
 # Flip Product Page
 
+[live demo](https://ferater.github.io/Flip-Product-Page/)
+
 [original figma](https://www.figma.com/community/file/1232699175688399885)
+
+[Images source](https://unsplash.com/es/@UCm1vIghgeGuW2ud7RnqzbGg)
 
 ## Setup
 ```
