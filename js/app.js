@@ -20,15 +20,16 @@ Array.from(pages).forEach((page, index) => {
   });
 });
 
+// zoom in out functions
 let a = 0;
 let b = 64;
-const incraseFontSize = () => {
+const zoomIn = () => {
   console.log("inc");
   b += 1;
   if (b >= 99) b = 64;
   document.documentElement.style.fontSize = a + "." + b + "vw";
 };
-const decraseFontSize = () => {
+const zoomOut = () => {
   console.log("dec");
   b -= 1;
   if (b <= 40) b = 64;
